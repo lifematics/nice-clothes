@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
+
+Route::get('/hoge', 'HogeController@foo');
+
+Route::get('/Color/{a}', 'ColorController@Color');
+
+Route::get('/Kind', 'KindController@Kind');
+
+Route::get('/Suggestion/{d}/{value}','SuggestionController@Suggestion');
